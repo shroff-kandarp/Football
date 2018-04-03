@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        UINavigationBar.appearance().backgroundColor = UIColor.UCAColor.AppThemeTxtColor
+        UINavigationBar.appearance().barTintColor = UIColor.UCAColor.AppThemeColor
+        UIBarButtonItem.appearance().tintColor = UIColor.UCAColor.AppThemeTxtColor
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.UCAColor.AppThemeTxtColor, NSFontAttributeName: UIFont(name: "Roboto-Light", size: 20)!]
+        
+        //        UINavigationBar.appearance().shadowImage = UIImage()
+        //        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+                
+        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().toolbarDoneBarButtonItemText = "Done"
+        
         return true
     }
 

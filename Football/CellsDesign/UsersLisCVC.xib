@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UsersLisCVC" id="qm4-4c-cOM" customClass="UsersLisCVC" customModule="Football" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2se-h3-PXk" customClass="CardView" customModule="Football" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="131" height="175"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Krr-Sh-ekL">
+                                <rect key="frame" x="2" y="2" width="127" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="710-cS-yaJ"/>
+                                    <constraint firstAttribute="width" constant="127" id="ndS-rX-3Yi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jbB-sK-6gE">
+                                <rect key="frame" x="5" y="127" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4P-9b-zvA">
+                                <rect key="frame" x="5" y="153" width="121" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.2033629441624365" green="0.2033629441624365" blue="0.2033629441624365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O4P-9b-zvA" secondAttribute="trailing" constant="5" id="0vU-VK-x6j"/>
+                            <constraint firstItem="Krr-Sh-ekL" firstAttribute="top" secondItem="2se-h3-PXk" secondAttribute="top" constant="2" id="6FD-qe-HIK"/>
+                            <constraint firstAttribute="trailing" secondItem="Krr-Sh-ekL" secondAttribute="trailing" constant="2" id="8P9-mC-2VH"/>
+                            <constraint firstItem="O4P-9b-zvA" firstAttribute="top" secondItem="jbB-sK-6gE" secondAttribute="bottom" constant="5" id="Jxz-rt-dYO"/>
+                            <constraint firstAttribute="trailing" secondItem="jbB-sK-6gE" secondAttribute="trailing" constant="5" id="LFC-IL-Gem"/>
+                            <constraint firstItem="O4P-9b-zvA" firstAttribute="leading" secondItem="2se-h3-PXk" secondAttribute="leading" constant="5" id="RSr-Hs-UQv"/>
+                            <constraint firstItem="Krr-Sh-ekL" firstAttribute="leading" secondItem="2se-h3-PXk" secondAttribute="leading" constant="2" id="YeJ-dR-ppQ"/>
+                            <constraint firstAttribute="bottom" secondItem="O4P-9b-zvA" secondAttribute="bottom" constant="5" id="kMJ-T6-xhK"/>
+                            <constraint firstItem="jbB-sK-6gE" firstAttribute="leading" secondItem="2se-h3-PXk" secondAttribute="leading" constant="5" id="p4O-0S-nxV"/>
+                            <constraint firstItem="Krr-Sh-ekL" firstAttribute="height" secondItem="2se-h3-PXk" secondAttribute="height" constant="-51" id="qaD-XY-1cl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2se-h3-PXk" firstAttribute="top" secondItem="qm4-4c-cOM" secondAttribute="top" constant="5" id="CK1-Gs-Hf0"/>
+                <constraint firstAttribute="trailing" secondItem="2se-h3-PXk" secondAttribute="trailing" constant="5" id="Gaz-jX-4mz"/>
+                <constraint firstItem="2se-h3-PXk" firstAttribute="leading" secondItem="qm4-4c-cOM" secondAttribute="leading" constant="5" id="bQV-4Y-Ktk"/>
+                <constraint firstAttribute="bottom" secondItem="2se-h3-PXk" secondAttribute="bottom" constant="5" id="vBv-ll-b2B"/>
+            </constraints>
+            <size key="customSize" width="173" height="185"/>
+            <connections>
+                <outlet property="playerImgView" destination="Krr-Sh-ekL" id="2dy-SG-o4E"/>
+                <outlet property="playerMobileLbl" destination="O4P-9b-zvA" id="tgr-S6-XAa"/>
+                <outlet property="playerNameLbl" destination="jbB-sK-6gE" id="9KP-hm-vOW"/>
+            </connections>
+            <point key="canvasLocation" x="-33.5" y="-18.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddUserUV" customModule="Football" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="iQf-jr-XdI" id="sWy-qC-lOP"/>
+                <outlet property="closeImgView" destination="Ruv-oM-myB" id="aPb-Gg-3rp"/>
+                <outlet property="editImgView" destination="9J4-XW-iLb" id="lIZ-Fg-gjH"/>
+                <outlet property="editImgViewArea" destination="Ydu-ul-8eN" id="pdc-bB-Dql"/>
+                <outlet property="mobileTxtField" destination="OL3-C2-Tii" id="8r2-A6-n6f"/>
+                <outlet property="nameTxtField" destination="RSd-5m-ZYA" id="Ehb-TN-4TY"/>
+                <outlet property="profilePicArea" destination="UjB-31-iAP" id="oLa-4q-K8r"/>
+                <outlet property="profilePicImgView" destination="olh-ns-gYw" id="Zoh-aW-R2W"/>
+                <outlet property="submitBtn" destination="FS1-s1-ni2" id="x0C-yv-MBl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQf-jr-XdI" customClass="GradientView" customModule="Football" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FS1-s1-ni2" customClass="MyButton" customModule="Football" customModuleProvider="target">
+                            <rect key="frame" x="97.5" y="597" width="180" height="55"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="1dt-pb-xmB"/>
+                                <constraint firstAttribute="height" constant="55" id="366-dg-3gw"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Add Player"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                    <color key="value" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSd-5m-ZYA" customClass="MyTextField" customModule="Football" customModuleProvider="target">
+                            <rect key="frame" x="15" y="212" width="345" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="TDW-kP-tfa"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OL3-C2-Tii" customClass="MyTextField" customModule="Football" customModuleProvider="target">
+                            <rect key="frame" x="15" y="287" width="345" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="4z9-hC-Zc9"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1r-jX-tSn">
+                            <rect key="frame" x="129.5" y="72" width="115" height="115"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjB-31-iAP" userLabel="ProfilePicSubArea">
+                                    <rect key="frame" x="7.5" y="7" width="100" height="100"/>
+                                    <subviews>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player2" translatesAutoresizingMaskIntoConstraints="NO" id="olh-ns-gYw">
+                                            <rect key="frame" x="5" y="5" width="90" height="90"/>
+                                            <gestureRecognizers/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="olh-ns-gYw" firstAttribute="top" secondItem="UjB-31-iAP" secondAttribute="top" constant="5" id="2S2-eJ-kBT"/>
+                                        <constraint firstAttribute="trailing" secondItem="olh-ns-gYw" secondAttribute="trailing" constant="5" id="8Xy-gl-7Rm"/>
+                                        <constraint firstAttribute="width" constant="100" id="N55-Bd-9ix"/>
+                                        <constraint firstItem="olh-ns-gYw" firstAttribute="leading" secondItem="UjB-31-iAP" secondAttribute="leading" constant="5" id="Tj6-rN-QPF"/>
+                                        <constraint firstAttribute="height" constant="100" id="dFx-n0-d5U"/>
+                                        <constraint firstAttribute="bottom" secondItem="olh-ns-gYw" secondAttribute="bottom" constant="5" id="xVq-JL-rnd"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydu-ul-8eN">
+                                    <rect key="frame" x="77" y="8" width="30" height="30"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_camera" translatesAutoresizingMaskIntoConstraints="NO" id="9J4-XW-iLb" userLabel="edit-icon-Image View">
+                                            <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="9J4-XW-iLb" secondAttribute="trailing" constant="5" id="4A1-wL-Qvu"/>
+                                        <constraint firstAttribute="height" constant="30" id="7tx-bB-T6a"/>
+                                        <constraint firstAttribute="bottom" secondItem="9J4-XW-iLb" secondAttribute="bottom" constant="5" id="DtH-lF-Y4B"/>
+                                        <constraint firstItem="9J4-XW-iLb" firstAttribute="top" secondItem="Ydu-ul-8eN" secondAttribute="top" constant="5" id="Q1w-rU-xop"/>
+                                        <constraint firstAttribute="width" constant="30" id="Qq8-vN-mZJ"/>
+                                        <constraint firstItem="9J4-XW-iLb" firstAttribute="leading" secondItem="Ydu-ul-8eN" secondAttribute="leading" constant="5" id="fhW-op-1C4"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ydu-ul-8eN" secondAttribute="trailing" constant="8" id="6vB-59-R0x"/>
+                                <constraint firstAttribute="height" constant="115" id="cNN-zP-JlD"/>
+                                <constraint firstItem="UjB-31-iAP" firstAttribute="centerX" secondItem="A1r-jX-tSn" secondAttribute="centerX" id="fK3-2A-l9Q"/>
+                                <constraint firstItem="UjB-31-iAP" firstAttribute="centerY" secondItem="A1r-jX-tSn" secondAttribute="centerY" id="qU1-Fh-RdK"/>
+                                <constraint firstItem="Ydu-ul-8eN" firstAttribute="top" secondItem="A1r-jX-tSn" secondAttribute="top" constant="8" id="uzD-hZ-zTc"/>
+                                <constraint firstAttribute="width" constant="115" id="v0l-Pw-PQW"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close_detail" translatesAutoresizingMaskIntoConstraints="NO" id="Ruv-oM-myB">
+                            <rect key="frame" x="315" y="25" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="9Rf-Dv-xre"/>
+                                <constraint firstAttribute="height" constant="40" id="Fhj-DS-h4v"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.23299479790800556" green="0.18294889270308781" blue="0.24140164604041781" alpha="0.65020333904109584" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="OL3-C2-Tii" firstAttribute="top" secondItem="RSd-5m-ZYA" secondAttribute="bottom" constant="15" id="2bT-t2-Ku6"/>
+                        <constraint firstItem="OL3-C2-Tii" firstAttribute="leading" secondItem="iQf-jr-XdI" secondAttribute="leading" constant="15" id="2hx-0g-thI"/>
+                        <constraint firstAttribute="trailing" secondItem="RSd-5m-ZYA" secondAttribute="trailing" constant="15" id="ABt-hf-BYv"/>
+                        <constraint firstItem="A1r-jX-tSn" firstAttribute="top" secondItem="iQf-jr-XdI" secondAttribute="top" constant="72" id="HV2-zr-Yy7"/>
+                        <constraint firstItem="Ruv-oM-myB" firstAttribute="top" secondItem="iQf-jr-XdI" secondAttribute="top" constant="25" id="KaA-NI-Mp3"/>
+                        <constraint firstItem="RSd-5m-ZYA" firstAttribute="top" secondItem="A1r-jX-tSn" secondAttribute="bottom" constant="25" id="WVu-D2-wde"/>
+                        <constraint firstItem="RSd-5m-ZYA" firstAttribute="leading" secondItem="iQf-jr-XdI" secondAttribute="leading" constant="15" id="Xjw-UM-A4B"/>
+                        <constraint firstAttribute="bottom" secondItem="FS1-s1-ni2" secondAttribute="bottom" constant="15" id="cek-3C-COf"/>
+                        <constraint firstAttribute="trailing" secondItem="OL3-C2-Tii" secondAttribute="trailing" constant="15" id="cta-bB-U11"/>
+                        <constraint firstItem="FS1-s1-ni2" firstAttribute="centerX" secondItem="iQf-jr-XdI" secondAttribute="centerX" id="lnm-Pd-Jrh"/>
+                        <constraint firstAttribute="trailing" secondItem="Ruv-oM-myB" secondAttribute="trailing" constant="20" id="pcs-Wq-Cqi"/>
+                        <constraint firstItem="A1r-jX-tSn" firstAttribute="centerX" secondItem="iQf-jr-XdI" secondAttribute="centerX" id="rjt-98-Cj8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iQf-jr-XdI" secondAttribute="bottom" id="0eD-JB-ev2"/>
+                <constraint firstItem="iQf-jr-XdI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8ae-6X-QGp"/>
+                <constraint firstItem="iQf-jr-XdI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RlX-qo-NOr"/>
+                <constraint firstAttribute="trailing" secondItem="iQf-jr-XdI" secondAttribute="trailing" id="cXz-FF-qR9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_camera" width="256" height="256"/>
+        <image name="ic_close_detail" width="72" height="72"/>
+        <image name="player2" width="160" height="180"/>
+    </resources>
+</document>
