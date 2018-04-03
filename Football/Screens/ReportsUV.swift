@@ -147,6 +147,7 @@ class ReportsUV: UIViewController, UITableViewDelegate, UITableViewDataSource, M
         
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
         if(GeneralFunctions.getValue(key: "PLAYER_INFO_UPDATED") != nil){
             

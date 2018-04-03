@@ -18,7 +18,6 @@ class LauncherScreenUV: UIViewController, OnLocationUpdateDelegate {
     var getLocation:GetLocation!
     var locationDialog:MTDialog!
 
-    
     override func viewWillAppear(_ animated: Bool) {
         self.configureRTLView()
     }
