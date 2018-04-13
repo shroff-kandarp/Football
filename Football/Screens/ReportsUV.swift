@@ -264,6 +264,7 @@ class ReportsUV: UIViewController, UITableViewDelegate, UITableViewDataSource, M
         }else{
             Utils.printLog(msgData: "added:\("\(selectedDate.getDayName()), \(selectedDate.getDayNum()) \(selectedDate.getMonthName()) \(selectedDate.getYear())")::::::\(selectedDate)")
             
+            
             if(self.DATE_SELECTION_TYPE == "FROM"){
                 if(self.selectedToDate != ""){
                     let toDate = Utils.convertStringToDate(dateStr: self.selectedToDate, dateFormat: "yyyy-MM-dd")
