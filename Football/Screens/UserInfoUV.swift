@@ -373,7 +373,7 @@ class UserInfoUV: UIViewController, MyLabelClickDelegate, MDDatePickerDialogDele
         let selectedDate = Utils.convertStringToDate(dateStr: date.convertDateToYMD(), dateFormat: "yyyy-MM-dd")
         
         if(selectedDate > Date()){
-            self.generalFunc.setError(uv: self, title: "", content: "Selected date cannot be greter then current date. Please select dcurrent date or date before current date.")
+            self.generalFunc.setError(uv: self, title: "", content: "Selected date cannot be greater then current date. Please select current date or date before current date.")
         }else{
             self.selectedDate = date.convertDateToYMD()
             Utils.printLog(msgData: "added:\("\(selectedDate.getDayName()), \(selectedDate.getDayNum()) \(selectedDate.getMonthName()) \(selectedDate.getYear())")::::::\(selectedDate)")
