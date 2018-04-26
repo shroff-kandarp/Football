@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared().isEnabled = true
         IQKeyboardManager.shared().toolbarDoneBarButtonItemText = "Done"
         
+        Thread.sleep(forTimeInterval: 3)
+        
         return true
     }
 

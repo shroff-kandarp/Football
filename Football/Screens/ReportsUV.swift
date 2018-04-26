@@ -260,7 +260,7 @@ class ReportsUV: UIViewController, UITableViewDelegate, UITableViewDataSource, M
         let selectedDate = Utils.convertStringToDate(dateStr: date.convertDateToYMD(), dateFormat: "yyyy-MM-dd")
         
         if(selectedDate > Date()){
-            self.generalFunc.setError(uv: self, title: "", content: "Selected date cannot be greater then current date. Please select current date or date before current date.")
+            self.generalFunc.setError(uv: self, title: "", content: "Selected date cannot be greater then current date. Please select current date or date before today.")
         }else{
             Utils.printLog(msgData: "added:\("\(selectedDate.getDayName()), \(selectedDate.getDayNum()) \(selectedDate.getMonthName()) \(selectedDate.getYear())")::::::\(selectedDate)")
             
